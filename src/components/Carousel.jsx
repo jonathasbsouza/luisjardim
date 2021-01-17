@@ -8,11 +8,10 @@ import "./Carousel.css"
 
 export const Carousel = ({ images }) => {
   const swiperParams = {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
   }
   return (
     <Swiper {...swiperParams}>
@@ -23,6 +22,9 @@ export const Carousel = ({ images }) => {
               fluid={image.localFile.childImageSharp.fluid}
               alt={image.title}
             />
+            { image.description && ( 
+              <p>{image.description}</p>
+            )}
           </div>
         )
       })}
