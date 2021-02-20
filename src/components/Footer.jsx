@@ -19,6 +19,13 @@ const Footer = () => {
           }
         }
       }
+      aldir: file(relativePath: { eq: "aldir-blanc.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -38,10 +45,8 @@ const Footer = () => {
           label="Pinterest"
         />
       </ul>
-      <div className="mt-8 md:mt-0 md:order-1">
-        <p className="text-center text-sm md:text-base text-gray-700">
-          &copy; 2020 John Doe. All rights reserved.
-        </p>
+      <div className="mt-9 md:mt-0 md:order-1">
+        <img src={'/aldir-blanc.jpg'} alt="Logo" />
       </div>
     </div>
   )
