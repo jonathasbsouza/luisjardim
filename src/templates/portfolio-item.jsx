@@ -12,6 +12,7 @@ export default props => {
     name,
     summary,
     thumbnail,
+    references,
   } = props.data.item
 
   return (
@@ -34,6 +35,10 @@ export default props => {
                   {description.description}
                 </div>
               )}
+                <div className="my-4 text-sm text-gray-700 whitespace-pre-line">
+                  <h5>Fonte</h5>
+                  <span>{ references ? references : 'Todas as imagens fazem parte do acervo da Hemeroteca Digital da Biblioteca Nacional.' }</span>
+                </div>
             </div>
             <div className="w-full lg:w-2/3 pb-8">
               {gallery && gallery.length === 1 && (
@@ -57,6 +62,7 @@ export const query = graphql`
       description {
         description
       }
+      references
       gallery {
         id
         localFile {
