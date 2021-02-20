@@ -30,24 +30,8 @@ const Footer = () => {
   `)
 
   return (
-    <div className="container py-12 md:flex md:items-center md:justify-between">
-      <ul className="flex justify-center md:order-2">
-        <FooterLink href={links.twitter} icon={FaTwitter} label="Twitter" />
-        <FooterLink href={links.facebook} icon={FaFacebook} label="Facebook" />
-        <FooterLink
-          href={links.instagram}
-          icon={FaInstagram}
-          label="Instagram"
-        />
-        <FooterLink
-          href={links.pinterest}
-          icon={FaPinterest}
-          label="Pinterest"
-        />
-      </ul>
-      <div className="mt-9 md:mt-0 md:order-1">
+    <div className="container py-12 md:flex md:items-center">
         <img src={'/aldir-blanc.jpg'} alt="Logo" />
-      </div>
     </div>
   )
 }
