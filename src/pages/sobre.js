@@ -6,7 +6,7 @@ import SiteMetadata from "../components/SiteMetadata"
 
 const AboutPage = ({ data }) => (
   <Layout>
-    <SiteMetadata title="About" description="Sample description" />
+    <SiteMetadata title="Sobre" description="Sobre o projeto" />
 
     <div className="bg-gray-100">
       <div className="w-screen bg-red-700 hero-about"></div>
@@ -60,14 +60,14 @@ export const query = graphql`
   query {
     author: file(relativePath: { eq: "luis-jardim.png" }) {
       childImageSharp {
-        fluid(maxWidth: 600, quality: 85) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     linhaTempo: file(relativePath: { eq: "linha-tempo.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200, maxHeight: 800) {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }

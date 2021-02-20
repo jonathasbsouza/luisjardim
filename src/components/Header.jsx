@@ -20,38 +20,41 @@ const Header = () => {
   `)
 
   return (
-    <div className="container py-6">
-      <div className="flex justify-between items-center">
-        <Link to="/">
-          <img alt="Logo" className="w-24 md:w-32" src="logo.svg" />
-        </Link>
+    <div className="w-100 bg-black text-white">
 
-        <button
-          className="sm:hidden"
-          onClick={() => setIsMenuOpen(true)}
-          aria-label="Open Menu"
-        >
-          <FaBars className="h-6 w-auto text-gray-900 fill-current -mt-1" />
-        </button>
+      <div className="container py-6">
+        <div className="flex justify-between items-center">
+          <Link to="/">
+            <span class="font-bold uppercase">O design de Luis Jardim</span>
+          </Link>
 
-        <div className="hidden sm:block">
-          {site.data.menu.map((link, key) => (
-            <Link
-              key={`menu_desktop_link${key}`}
-              className="ml-6 sm:ml-8 text-sm sm:text-base font-medium px-px border-b-2 pb-2 border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-200 transition duration-150 ease-in-out"
-              activeClassName="border-blue-600 text-gray-900 hover:border-blue-600"
-              to={link.to}
-            >
-              {link.name}
-            </Link>
-          ))}
+          <button
+            className="sm:hidden"
+            onClick={() => setIsMenuOpen(true)}
+            aria-label="Open Menu"
+          >
+            <FaBars className="h-6 w-auto text-gray-900 fill-current -mt-1" />
+          </button>
+
+          <div className="hidden sm:block">
+            {site.data.menu.map((link, key) => (
+              <Link
+                key={`menu_desktop_link${key}`}
+                className="ml-6 sm:ml-8 text-sm sm:text-base font-medium px-px border-b-2 pb-2 border-transparent text-gray-300 hover:text-white hover:border-gray-200 transition duration-150 ease-in-out"
+                activeClassName="border-green-900 text-white hover:border-green-600"
+                to={link.to}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
         </div>
+        <MenuMobile
+          isOpen={isMenuOpen}
+          setIsOpen={setIsMenuOpen}
+          links={site.data.menu}
+        />
       </div>
-      <MenuMobile
-        isOpen={isMenuOpen}
-        setIsOpen={setIsMenuOpen}
-        links={site.data.menu}
-      />
     </div>
   )
 }
