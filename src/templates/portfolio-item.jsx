@@ -10,10 +10,8 @@ export default props => {
     description,
     gallery,
     name,
-    related,
     summary,
     thumbnail,
-    url,
   } = props.data.item
 
   return (
@@ -25,15 +23,12 @@ export default props => {
       />
       <div className="bg-gray-0">
 
-          <div className="flex flex-wrap h-screen">
+          <div className="flex flex-wrap">
             
-            <div className="w-full lg:w-1/3 p-12">
+            <div className="w-full self-end lg:w-1/3 p-12">
               <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
                 {name}
               </h1>
-              <h2 className="text-xl leading-tight font-semibold tracking-tight text-blue-600 sm:text-2xl">
-                {summary}
-              </h2>
               {description && (
                 <div className="my-4 text-base text-gray-700 whitespace-pre-line">
                   {description.description}
