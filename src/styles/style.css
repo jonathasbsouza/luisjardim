@@ -14,6 +14,13 @@ body {
   @apply .max-w-screen-xl .mx-auto .px-4;
 }
 
+.hero-about {
+  height: 40vh;
+  background-image: url('../images/about_hero.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
 @screen md {
   .container {
     @apply .px-6;
