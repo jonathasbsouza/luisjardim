@@ -11,7 +11,6 @@ export default props => {
     gallery,
     name,
     summary,
-    thumbnail,
     references,
   } = props.data.item
 
@@ -20,7 +19,6 @@ export default props => {
       <SiteMetadata
         title={name}
         description={summary}
-        image={thumbnail.localFile.publicURL}
       />
       <div className="bg-gray-0">
 
@@ -39,7 +37,7 @@ export default props => {
                 { references && (
                   <>
                     <h5>Fonte</h5>
-                    <span>references</span>
+                    <span>{ references }</span>
                   </>
                 )}
                 </div>
@@ -49,6 +47,14 @@ export default props => {
                 <Img
                   fluid={gallery[0].localFile.childImageSharp.fluid}
                   alt={name}
+                  style={{
+                    height: "70vh",
+                    backgroundColor: "#232425",
+                  }}
+                  imgStyle={{
+                    objectPosition: "50% 50%",
+                    objectFit: "contain"
+                  }}
                 />
               )}
               {gallery && gallery.length > 1 && <Carousel images={gallery} />}
@@ -84,11 +90,6 @@ export const query = graphql`
         ...PortfolioCard
       }
       summary
-      thumbnail {
-        localFile {
-          publicURL
-        }
-      }
       url
     }
   }

@@ -18,13 +18,13 @@ const IndexPage = ({ data }) => {
             <Listlink label="Jornal A Provincia" to="/jornal-a-provincia" />
             <Listlink label="Revista de Garanhuns" to="/revista-garanhuns" />
             <Listlink label="Revista Moderna" to="/revista-moderna" />
-            <Listlink label="Acção Pernambucana" to="/jornal-a-provincia" />
-            <Listlink label="Guia do Recife" to="/jornal-a-provincia" />
-            <Listlink label="Annuario de Pernambuco 1936" to="/jornal-a-provincia" />
-            <Listlink label="Diario de Pernambuco" to="/jornal-a-provincia" />
-            <Listlink label="Jornal do Commercio" to="/jornal-a-provincia" />
-            <Listlink label="Brasil Açucareiro" to="/jornal-a-provincia" />
-            <Listlink label="Rio de Janeiro" to="/jornal-a-provincia" />
+            <Listlink label="Acção Pernambucana" to="/accao-pernambucana" />
+            <Listlink label="Guia do Recife" to="/guia-do-recife" />
+            <Listlink label="Annuario de Pernambuco 1936" to="/annuario-de-pernambuco-1936" />
+            <Listlink label="Diario de Pernambuco" to="/diario-de-pernambuco" />
+            <Listlink label="Jornal do Commercio" to="/jornal-do-commercio" />
+            <Listlink label="Brasil Açucareiro" to="/brasil-acucareiro" />
+            <Listlink label="Rio de Janeiro" to="/rio-de-janeiro" />
             </div>
           </div>
         </div>

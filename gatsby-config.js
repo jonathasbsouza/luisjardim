@@ -11,8 +11,7 @@ if (!CONTENTFUL_SPACE_ID || !CONTENTFUL_ACCESS_TOKEN) {
 module.exports = {
   siteMetadata: {
     menu: [
-      { name: "Home", to: "/" },
-      { name: "Sobre", to: "/sobre" },
+      { name: "", to: "/" },
     ],
     links: {
       facebook: "https://www.facebook.com/",
@@ -22,8 +21,8 @@ module.exports = {
     },
     locale: "en-US",
     title: `Luis Jardim`,
-    description: `Photography portfolio of John Doe`,
-    author: `@johndoe`,
+    description: `Exposição digital das obras de Luis Jardim`,
+    author: `Bruno Veríssimo`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
