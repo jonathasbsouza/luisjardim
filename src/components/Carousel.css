@@ -1,6 +1,7 @@
 .swiper-container {
   --swiper-theme-color: theme("colors.blue.500");
   max-height: 80vh;
+
 }
 
 .swiper-pagination-bullet {

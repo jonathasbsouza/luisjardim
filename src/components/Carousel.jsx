@@ -21,6 +21,13 @@ export const Carousel = ({ images }) => {
             <Img
               fluid={image.localFile.childImageSharp.fluid}
               alt={image.title}
+              style={{
+                height: "80vh"
+              }}
+              imgStyle={{
+                objectPosition: "50% 50%",
+                objectFit: "contain"
+              }}
             />
             { image.description && ( 
               <p>{image.description}</p>

@@ -15,10 +15,28 @@ body {
 }
 
 .hero-about {
-  height: 40vh;
+  height: 45vh;
   background-image: url('../images/about_hero.jpg');
   background-position: center center;
   background-size: cover;
+}
+
+.list-link {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  height: 12rem;
+  background-color: #223322;
+  color: white;
+  transition: all ease-out 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.list-link:hover {
+  opacity: 0.8;
 }
 
 @screen md {
