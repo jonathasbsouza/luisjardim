@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
 import React from "react"
-import Listlink from "../components/Listlink"
+import ListLink from "../components/ListLink"
 import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
 import Img from "gatsby-image"
@@ -15,16 +15,16 @@ const IndexPage = ({ data }) => {
         <div className="w-full">
           <div className="p-4">
             <div className="grid gap-4 grid-flow-row md:grid-cols-5 sm:grid-cols-2">
-            <Listlink label="Jornal A Provincia" to="/jornal-a-provincia" />
-            <Listlink label="Revista de Garanhuns" to="/revista-garanhuns" />
-            <Listlink label="Revista Moderna" to="/revista-moderna" />
-            <Listlink label="Acção Pernambucana" to="/accao-pernambucana" />
-            <Listlink label="Guia do Recife" to="/guia-do-recife" />
-            <Listlink label="Annuario de Pernambuco 1936" to="/annuario-de-pernambuco-1936" />
-            <Listlink label="Diario de Pernambuco" to="/diario-de-pernambuco" />
-            <Listlink label="Jornal do Commercio" to="/jornal-do-commercio" />
-            <Listlink label="Brasil Açucareiro" to="/brasil-acucareiro" />
-            <Listlink label="Rio de Janeiro" to="/rio-de-janeiro" />
+            <ListLink label="Jornal A Provincia" to="/jornal-a-provincia" />
+            <ListLink label="Revista de Garanhuns" to="/revista-garanhuns" />
+            <ListLink label="Revista Moderna" to="/revista-moderna" />
+            <ListLink label="Acção Pernambucana" to="/accao-pernambucana" />
+            <ListLink label="Guia do Recife" to="/guia-do-recife" />
+            <ListLink label="Annuario de Pernambuco 1936" to="/annuario-de-pernambuco-1936" />
+            <ListLink label="Diario de Pernambuco" to="/diario-de-pernambuco" />
+            <ListLink label="Jornal do Commercio" to="/jornal-do-commercio" />
+            <ListLink label="Brasil Açucareiro" to="/brasil-acucareiro" />
+            <ListLink label="Rio de Janeiro" to="/rio-de-janeiro" />
             </div>
           </div>
         </div>
