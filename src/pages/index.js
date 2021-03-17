@@ -16,8 +16,8 @@ const IndexPage = ({ data }) => {
           <div className="p-4">
             <div className="grid gap-4 grid-flow-row md:grid-cols-5 sm:grid-cols-2">
             <Listlink label="Jornal A Provincia" to="/jornal-a-provincia" />
-            <Listlink label="Revista de Garanhuns" to="/jornal-a-provincia" />
-            <Listlink label="Revista Moderna" to="/jornal-a-provincia" />
+            <Listlink label="Revista de Garanhuns" to="/revista-garanhuns" />
+            <Listlink label="Revista Moderna" to="/revista-moderna" />
             <Listlink label="Acção Pernambucana" to="/jornal-a-provincia" />
             <Listlink label="Guia do Recife" to="/jornal-a-provincia" />
             <Listlink label="Annuario de Pernambuco 1936" to="/jornal-a-provincia" />

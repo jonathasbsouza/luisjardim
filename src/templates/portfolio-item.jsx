@@ -36,8 +36,12 @@ export default props => {
                 </div>
               )}
                 <div className="my-4 text-sm text-gray-700 whitespace-pre-line">
-                  <h5>Fonte</h5>
-                  <span>{ references ? references : 'Todas as imagens fazem parte do acervo da Hemeroteca Digital da Biblioteca Nacional.' }</span>
+                { references && (
+                  <>
+                    <h5>Fonte</h5>
+                    <span>references</span>
+                  </>
+                )}
                 </div>
             </div>
             <div className="w-full lg:w-2/3 pb-8">

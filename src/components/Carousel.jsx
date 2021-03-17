@@ -22,7 +22,8 @@ export const Carousel = ({ images }) => {
               fluid={image.localFile.childImageSharp.fluid}
               alt={image.title}
               style={{
-                height: "80vh"
+                height: "70vh",
+                backgroundColor: "#232425",
               }}
               imgStyle={{
                 objectPosition: "50% 50%",
@@ -30,7 +31,7 @@ export const Carousel = ({ images }) => {
               }}
             />
             { image.description && ( 
-              <p>{image.description}</p>
+              <p className="py-2 text-xs">{image.description}</p>
             )}
           </div>
         )
