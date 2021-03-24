@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 function ListLink(props) {
   return (
-    <Link className="list-link" to={props.to}>{props.label}</Link>
+    <Link className="list-link" to={props.to}>{ props.label }</Link>
   )
 }
 

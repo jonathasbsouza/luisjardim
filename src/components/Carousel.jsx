@@ -21,6 +21,7 @@ export const Carousel = ({ images }) => {
             <Img
               fluid={image.localFile.childImageSharp.fluid}
               alt={image.title}
+              loading="eager"
               style={{
                 height: "70vh",
                 backgroundColor: "#232425",

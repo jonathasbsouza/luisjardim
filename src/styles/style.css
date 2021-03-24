@@ -15,10 +15,10 @@ body {
 }
 
 .hero-about {
-  height: 45vh;
+  height: 75vh;
   background-image: url('../images/about_hero.jpg');
   background-position: center center;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 .list-link {

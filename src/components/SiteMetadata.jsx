@@ -48,7 +48,7 @@ SiteMetadata.propTypes = {
 }
 
 SiteMetadata.defaultProps = {
-  image: "/social.png",
+  image: "/social.jpg",
 }
 
 export default SiteMetadata

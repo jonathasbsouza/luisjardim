@@ -47,6 +47,7 @@ export default props => {
                 <Img
                   fluid={gallery[0].localFile.childImageSharp.fluid}
                   alt={name}
+                  loading="eager"
                   style={{
                     height: "70vh",
                     backgroundColor: "#232425",

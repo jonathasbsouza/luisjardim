@@ -29,9 +29,9 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       <div className="container py-20 lg:pb-16">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           
-          <div className="w-full md:w-1/2 xl:w-3/5 pb-8 md:pb-0">
+          <div className="w-full md:w-1/2 xl:w-4/5 pb-8 md:pb-0">
             <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Sobre Luís Jardim
             </h1>
@@ -60,12 +60,6 @@ const IndexPage = ({ data }) => {
               Por Bruno Verissimo, com orientação de Silvio Barreto Campello<br />
               Dúvidas ou mais informações: brunopverissimo@gmail.com
             </div>
-          </div>
-          <div className="w-full md:w-1/2 xl:w-2/5 md:pl-12">
-            <Img
-              fluid={data.author.childImageSharp.fluid}
-              alt="John Doe"
-            />
           </div>
         </div>
       </div>
