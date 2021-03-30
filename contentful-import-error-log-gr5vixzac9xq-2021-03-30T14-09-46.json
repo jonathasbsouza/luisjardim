@@ -1,0 +1,511 @@
+[
+  {
+    "ts": "2021-03-30T17:09:05.163Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "uy3h42sj0upk"
+            }
+          },
+          "id": "portfolio",
+          "type": "ContentType",
+          "createdAt": "2020-03-11T21:38:58.382Z",
+          "updatedAt": "2020-03-11T21:52:30.325Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 9,
+          "publishedAt": "2020-03-11T21:52:30.325Z",
+          "firstPublishedAt": "2020-03-11T21:38:58.972Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5GBl2yAHzXnu8cqPwGEcMy"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5GBl2yAHzXnu8cqPwGEcMy"
+            }
+          },
+          "publishedCounter": 5,
+          "version": 10,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5GBl2yAHzXnu8cqPwGEcMy"
+            }
+          }
+        },
+        "displayField": "name",
+        "name": "Portfolio",
+        "description": "",
+        "fields": [
+          {
+            "id": "name",
+            "name": "Name",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "summary",
+            "name": "Summary",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+              {
+                "size": {
+                  "max": 80
+                }
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+              {
+                "unique": true
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "thumbnail",
+            "name": "Thumbnail",
+            "type": "Link",
+            "localized": false,
+            "required": true,
+            "validations": [
+              {
+                "linkMimetypeGroup": [
+                  "image"
+                ]
+              }
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Asset"
+          },
+          {
+            "id": "description",
+            "name": "Description",
+            "type": "Text",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "type": "Array",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "items": {
+              "type": "Link",
+              "validations": [
+                {
+                  "linkMimetypeGroup": [
+                    "image"
+                  ]
+                },
+                {
+                  "assetImageDimensions": {
+                    "width": {
+                      "min": 900,
+                      "max": null
+                    },
+                    "height": {
+                      "min": 600,
+                      "max": null
+                    }
+                  }
+                }
+              ],
+              "linkType": "Asset"
+            }
+          },
+          {
+            "id": "url",
+            "name": "External URL",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "related",
+            "name": "Related projects",
+            "type": "Array",
+            "localized": false,
+            "required": false,
+            "validations": [
+              {
+                "size": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            ],
+            "disabled": false,
+            "omitted": false,
+            "items": {
+              "type": "Link",
+              "validations": [
+                {
+                  "linkContentType": [
+                    "portfolio"
+                  ]
+                }
+              ],
+              "linkType": "Entry"
+            }
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+          "errors": [
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "references"
+              ]
+            },
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "order"
+              ]
+            }
+          ],
+          "contentType": {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "gr5vixzac9xq"
+                }
+              },
+              "id": "portfolio",
+              "type": "ContentType",
+              "createdAt": "2021-01-16T23:24:34.323Z",
+              "updatedAt": "2021-03-17T07:26:51.159Z",
+              "environment": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Environment",
+                  "id": "12cb55ef-6da3-4cc2-90fe-b9729e9930fa"
+                }
+              },
+              "revision": 5
+            },
+            "displayField": "xhav",
+            "name": "Portfolio",
+            "description": "",
+            "assembly": false,
+            "fields": [
+              {
+                "id": "xhav",
+                "apiName": "name",
+                "name": "Name",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "bprv",
+                "apiName": "summary",
+                "name": "Summary",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                  {
+                    "size": {
+                      "max": 80
+                    }
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "mxax",
+                "apiName": "slug",
+                "name": "Slug",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                  {
+                    "unique": true
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "coid",
+                "apiName": "thumbnail",
+                "name": "Thumbnail",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                  {
+                    "linkMimetypeGroup": [
+                      "image"
+                    ]
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Asset"
+              },
+              {
+                "id": "cigi",
+                "apiName": "description",
+                "name": "Description",
+                "type": "Text",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "kxer",
+                "apiName": "gallery",
+                "name": "Gallery",
+                "type": "Array",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "items": {
+                  "type": "Link",
+                  "validations": [
+                    {
+                      "linkMimetypeGroup": [
+                        "image"
+                      ]
+                    }
+                  ],
+                  "linkType": "Asset"
+                }
+              },
+              {
+                "id": "eqkt",
+                "apiName": "url",
+                "name": "External URL",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "nwne",
+                "apiName": "related",
+                "name": "Related projects",
+                "type": "Array",
+                "localized": false,
+                "required": false,
+                "validations": [
+                  {
+                    "size": {
+                      "min": 0,
+                      "max": 3
+                    }
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "items": {
+                  "type": "Link",
+                  "validations": [
+                    {
+                      "linkContentType": [
+                        "portfolio"
+                      ]
+                    }
+                  ],
+                  "linkType": "Entry"
+                }
+              },
+              {
+                "id": "qlnFxGWWhamWQb0P",
+                "apiName": "references",
+                "name": "References",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "wQYj7qVyd1y7NHlG",
+                "apiName": "order",
+                "name": "Order",
+                "type": "Integer",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              }
+            ]
+          }
+        },
+        "request": {
+          "url": "content_types/portfolio",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/7.7.13; feature library-import; sdk contentful-management.js/5.26.1; platform node.js/v10.15.0; os macOS/19.4.0;",
+            "Authorization": "Bearer ...y1OZg",
+            "user-agent": "node.js/v10.15.0",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 10,
+            "Content-Length": 1534
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"name\",\"name\":\"Portfolio\",\"description\":\"\",\"fields\":[{\"id\":\"name\",\"name\":\"Name\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"summary\",\"name\":\"Summary\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[{\"size\":{\"max\":80}}],\"disabled\":false,\"omitted\":false},{\"id\":\"slug\",\"name\":\"Slug\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[{\"unique\":true}],\"disabled\":false,\"omitted\":false},{\"id\":\"thumbnail\",\"name\":\"Thumbnail\",\"type\":\"Link\",\"localized\":false,\"required\":true,\"validations\":[{\"linkMimetypeGroup\":[\"image\"]}],\"disabled\":false,\"omitted\":false,\"linkType\":\"Asset\"},{\"id\":\"description\",\"name\":\"Description\",\"type\":\"Text\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"gallery\",\"name\":\"Gallery\",\"type\":\"Array\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false,\"items\":{\"type\":\"Link\",\"validations\":[{\"linkMimetypeGroup\":[\"image\"]},{\"assetImageDimensions\":{\"width\":{\"min\":900,\"max\":null},\"height\":{\"min\":600,\"max\":null}}}],\"linkType\":\"Asset\"}},{\"id\":\"url\",\"name\":\"External URL\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"related\",\"name\":\"Related projects\",\"type\":\"Array\",\"localized\":false,\"required\":false,\"validations\":[{\"size\":{\"min\":0,\"max\":3}}],\"disabled\":false,\"omitted\":false,\"items\":{\"type\":\"Link\",\"validations\":[{\"linkContentType\":[\"portfolio\"]}],\"linkType\":\"Entry\"}}]}"
+        },
+        "requestId": "ab6ebe9ab5cdf106998c37dfac3173c7"
+      }
+    }
+  },
+  {
+    "ts": "2021-03-30T17:09:38.157Z",
+    "level": "error",
+    "error": {
+      "name": "AssetProcessingTimeout",
+      "message": "Asset is taking longer then expected to process.",
+      "entity": {
+        "metadata": {
+          "tags": [
+          ]
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gr5vixzac9xq"
+            }
+          },
+          "id": "4PwvtBmFDzNSlYyGOuJCBg",
+          "type": "Asset",
+          "createdAt": "2021-03-30T17:09:08.887Z",
+          "updatedAt": "2021-03-30T17:09:08.887Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5eQDzBNbnOKqAo9KzCheei"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5eQDzBNbnOKqAo9KzCheei"
+            }
+          },
+          "publishedCounter": 0,
+          "version": 1
+        },
+        "fields": {
+          "title": {
+            "en-US": "Spain"
+          },
+          "file": {
+            "en-US": {
+              "upload": "https://images.ctfassets.net/uy3h42sj0upk/4PwvtBmFDzNSlYyGOuJCBg/de2ef5e5ee7156d28ed9b038ac9383b2/spain1.jpg",
+              "fileName": "spain1.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      "stacktrace": [
+        "AssetProcessingTimeout: Asset is taking longer then expected to process.",
+        "/Users/jonathassouza/Documents/Devao/luisjardim/node_modules/contentful-management/dist/contentful-management.node.js:11905:21",
+        "process._tickCallback (internal/process/next_tick.js:68:7)"
+      ]
+    }
+  }
+]

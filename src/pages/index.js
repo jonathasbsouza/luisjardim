@@ -1,4 +1,4 @@
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import ListLink from "../components/ListLink"
 import Layout from "../layouts/Layout"
@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-    <SiteMetadata title="Sobre" description="Sobre o projeto" />
+    <SiteMetadata description="Exposição digital das obras de Luis Jardim" />
 
     <div className="bg-gray-100">
       <div className="w-screen bg-red-700 hero-about"></div>
@@ -55,10 +55,12 @@ const IndexPage = ({ data }) => {
             />
             <div className="mt-12 leading-loose">
               Este site em formato de galeria é o resultado da pesquisa de mestrado, mas também uma forma de difundir o trabalho de Luís Jardim para mais pessoas, já que acreditamos que o resgate da cultura material reinserido no presente e reconhecido por seus indivíduos, a quem ela pertence, pode contribuir na compreensão de suas identidades, as quais estão em constante processo de transformação.
+              <a className="font-bold pt-6 underline block" href="https://attena.ufpe.br/handle/123456789/39235">Leia a dissertação</a>
             </div>
             <div className="mt-12 leading-loose text-sm">
               Por Bruno Verissimo, com orientação de Silvio Barreto Campello<br />
-              Dúvidas ou mais informações: brunopverissimo@gmail.com
+              Dúvidas ou mais informações: brunopverissimo@gmail.com<br />
+              
             </div>
           </div>
         </div>

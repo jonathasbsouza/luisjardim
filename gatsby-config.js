@@ -20,7 +20,7 @@ module.exports = {
       twitter: "https://twitter.com/",
     },
     locale: "en-US",
-    title: `Luis Jardim`,
+    title: `O design de Luis Jardim`,
     description: `Exposição digital das obras de Luis Jardim`,
     author: `Bruno Veríssimo`,
   },

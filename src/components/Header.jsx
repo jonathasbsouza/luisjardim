@@ -28,14 +28,6 @@ const Header = () => {
             <span class="font-bold uppercase">O design de Luis Jardim</span>
           </Link>
 
-          <button
-            className="sm:hidden"
-            onClick={() => setIsMenuOpen(true)}
-            aria-label="Open Menu"
-          >
-            <FaBars className="h-6 w-auto text-gray-900 fill-current -mt-1" />
-          </button>
-
           <div className="hidden sm:block">
             {site.data.menu.map((link, key) => (
               <Link
